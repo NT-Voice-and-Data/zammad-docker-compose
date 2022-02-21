@@ -48,6 +48,8 @@ services:
 
   zammad-nginx:
     command: ["zammad-nginx"]
+    ports:
+      - "8080:8080"
     expose:
       - "8080"
     depends_on:
